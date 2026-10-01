@@ -1,0 +1,256 @@
+<title>Reanimator Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: project rail on the left, one working stage in the middle, locked-fields card on the right. Light only, per Ken's rule. */
+:root{
+  --ground:#F1F5F1; --panel:#FFFFFF; --ink:#16201A; --muted:#5B6A60; --line:#D8E0D9;
+  --accent:#1E8A4A; --accent-soft:#E3F3E8; --accent-ink:#0F4F29; --warn:#B45309; --warn-soft:#FDF1DC;
+  --display:'Bricolage Grotesque','Trebuchet MS',sans-serif; --body:'DM Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:16px}
+button,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.app{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr) 280px;gap:16px;align-items:start}
+@media(max-width:1040px){.app{grid-template-columns:minmax(0,1fr)}}
+header.top{max-width:1280px;margin:0 auto 16px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-size:28px;letter-spacing:-.02em}
+.mark b{color:var(--accent)}
+.tag{font-family:var(--mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+h2{font-family:var(--display);font-size:22px;margin:0 0 4px;letter-spacing:-.01em;text-wrap:balance}
+h3{font-family:var(--display);font-size:15px;margin:0 0 8px}
+.label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 16px;max-width:62ch}
+/* rail */
+.rail{display:flex;flex-direction:column;gap:8px}
+.plist{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.plist button{width:100%;text-align:left;background:none;border:1px solid transparent;border-radius:8px;padding:8px 10px;display:flex;flex-direction:column}
+.plist button:hover{background:var(--ground)}
+.plist button[aria-current=true]{background:var(--accent-soft);border-color:var(--accent)}
+.plist .n{font-weight:700;overflow-wrap:anywhere}.plist .m{font-size:12px;color:var(--muted)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:8px;padding:9px 14px;font-weight:700}
+.btn:hover{background:#2b3a31}
+.btn.ghost{background:var(--panel);color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.go{background:var(--accent);border-color:var(--accent)}.btn.go:hover{background:var(--accent-ink)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+/* paths */
+.paths{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.path{text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;min-height:118px}
+.path:hover{border-color:var(--accent);box-shadow:0 2px 0 var(--accent)}
+.path .no{font-family:var(--mono);font-size:12px;color:var(--accent-ink);background:var(--accent-soft);align-self:flex-start;padding:1px 8px;border-radius:99px}
+.path .t{font-family:var(--display);font-weight:700;font-size:17px}
+.path .d{color:var(--muted);font-size:13.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:7px 14px}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--panel);resize:vertical;min-height:90px}
+/* chat */
+.thread{display:flex;flex-direction:column;gap:12px;margin-bottom:12px}
+.msg{border-radius:10px;padding:12px 14px;min-width:0;overflow-wrap:anywhere}
+.msg.me{background:var(--accent-soft);align-self:flex-end;max-width:88%}
+.msg.ai{background:var(--panel);border:1px solid var(--line)}
+.msg h4{font-family:var(--display);margin:12px 0 4px;font-size:16px}
+.msg p{margin:0 0 8px}.msg ul,.msg ol{margin:0 0 8px;padding-left:22px}
+.msg code{font-family:var(--mono);font-size:13px;background:var(--ground);padding:0 4px;border-radius:4px}
+.msg .tools{display:flex;gap:8px;margin-top:8px}
+.msg .tools button{font-size:12px;padding:4px 10px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
+.msg .tools button:hover{border-color:var(--ink)}
+.dots{color:var(--muted);font-family:var(--mono);font-size:13px}
+.composer{position:sticky;bottom:0;background:var(--ground);padding-top:8px;display:flex;flex-direction:column;gap:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.err{background:var(--warn-soft);border:1px solid var(--warn);color:#6b3305;border-radius:8px;padding:10px 12px;margin-bottom:12px}
+/* side */
+.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0 0 16px}
+.facts dt{color:var(--muted);font-size:13px}.facts dd{margin:0;font-weight:700;overflow-wrap:anywhere}
+.lock{display:inline-block;font-family:var(--mono);font-size:11px;background:var(--accent-soft);color:var(--accent-ink);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:middle}
+select{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--panel);margin-bottom:12px}
+.saved{border-top:1px dashed var(--line);padding-top:12px;margin-top:12px}
+.saved pre{font-family:var(--mono);font-size:12px;white-space:pre-wrap;max-height:160px;overflow:auto;background:var(--ground);padding:8px;border-radius:6px;margin:8px 0 0}
+.small{font-size:13px;color:var(--muted)}
+@media(prefers-reduced-motion:no-preference){.path{transition:box-shadow .15s,border-color .15s}}
+</style>
+
+<header class="top">
+  <div class="mark">Reanimator <b>10</b></div>
+  <div class="tag">Ad Zombies cinematic scriptwriter</div>
+</header>
+
+<div class="app">
+  <aside class="panel rail" aria-label="Projects">
+    <p class="label">Projects</p>
+    <ul class="plist" id="plist"></ul>
+    <button class="btn go" id="newBtn" type="button">New project</button>
+    <p class="small" id="storeNote" hidden>Saving is off in this view. Projects last until you close the page.</p>
+  </aside>
+
+  <main id="stage" class="panel" aria-live="polite"></main>
+
+  <aside class="panel" id="side" aria-label="Project locks"></aside>
+</div>
+
+<script>
+const BRAIN = __BRAIN__;
+const BIBLE = __BIBLE__;
+const STYLES_DOC = __STYLES__;
+const RULES = `KEN'S RULES. No em dashes or long dashes, ever. Use a period, comma, or hyphen. No cliches, no jargon, plain words, sixth-grade reading level for copy. No invented statistics and no invented quotes from real people. Write like Ken talks, and fun analogies are welcome. Only claim an Ad Zombies offer or price in a script if Ken has confirmed it is live, so ask first. Any byline reads: Ken "Spanky" Moskowitz | Ad Zombies | adzombies.com. Never add a city. You cannot make images yourself. When asked for a frame, write the image prompt as text, one frame at a time, in the exact style language of the locked style.`;
+
+const PATHS=[
+ {n:1,t:'Cinematic short film',d:'A pure story. No selling. Mystery, adventure, a payoff that sticks.',ph:'What is the idea, even if it is just a feeling or an image? Or say "surprise me".'},
+ {n:2,t:'Music story film',d:'A film first, then lyrics, then prompts for a music generator.',ph:'What is the story or mood? Any genre or artist you want it to feel like?'},
+ {n:3,t:'Personal brand, service or client',d:'Entertainment first, offer at the payoff, call to action last.',ph:'Who is the brand or client, what do they sell, and who do they want to reach?'},
+ {n:4,t:'Scale a Skool community',d:'Pain, proof, urgency, landing page, short description, tagline.',ph:'What is the community about and who is it for? Link or paste anything you already have.'},
+ {n:5,t:'AI filmmaking community',d:'Teach story, retention and visuals with real cinematic examples.',ph:'What topic should the lesson or post teach? Who is watching?'},
+ {n:6,t:'Acquire clients',d:'Define the client avatar, then build a film that attracts the right buyers.',ph:'Who do you want to land as a client? Industry, size, and what keeps them up at night.'},
+ {n:7,t:'Vertical series',d:'Episodic. Series bible, season map, then one episode at a time.',ph:'What is the concept? List your main characters with one line each, or say "build them for me".'}
+];
+const AUDIO=['Voice over','Dialogue','Both','No audio'];
+const STYLES=['Realistic 35mm film','Oil painting / cinematic painterly','Stop frame animation','Cineplastic','90s comic book art','Origami','Storybook','Manga','Claymation'];
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let canStore=true;
+function load(){try{return JSON.parse(localStorage.getItem('reanimator.projects')||'[]')}catch(e){canStore=false;return []}}
+function save(){try{localStorage.setItem('reanimator.projects',JSON.stringify(projects))}catch(e){canStore=false;$('#storeNote').hidden=false}}
+let projects=load(), cur=null, draft={path:null,audio:null}, busy=false, ctrl=null, errMsg='';
+if(!canStore)$('#storeNote').hidden=false;
+const proj=()=>projects.find(p=>p.id===cur);
+const uid=()=>Math.random().toString(36).slice(2,9);
+
+function md(t){
+  const lines=esc(t).split('\n');let out='',list=null;
+  const close=()=>{if(list){out+='</'+list+'>';list=null}};
+  const inl=s=>s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/(^|[^*])\*([^*\n]+)\*/g,'$1<em>$2</em>');
+  for(const raw of lines){
+    const l=raw.trimEnd();let m;
+    if(m=l.match(/^#{1,6}\s+(.*)/)){close();out+='<h4>'+inl(m[1])+'</h4>'}
+    else if(m=l.match(/^\s*[-*]\s+(.*)/)){if(list!=='ul'){close();out+='<ul>';list='ul'}out+='<li>'+inl(m[1])+'</li>'}
+    else if(m=l.match(/^\s*\d+[.)]\s+(.*)/)){if(list!=='ol'){close();out+='<ol>';list='ol'}out+='<li>'+inl(m[1])+'</li>'}
+    else if(/^\s*-{3,}\s*$/.test(l)){close()}
+    else if(!l.trim()){close()}
+    else{close();out+='<p>'+inl(l)+'</p>'}
+  }
+  close();return out;
+}
+
+function renderRail(){
+  const ul=$('#plist');
+  ul.innerHTML=projects.length?'':'<li class="small">No projects yet.</li>';
+  for(const p of projects){
+    const li=document.createElement('li'),b=document.createElement('button');
+    b.type='button';b.setAttribute('aria-current',String(p.id===cur));
+    b.innerHTML='<span class="n"></span><span class="m"></span>';
+    b.querySelector('.n').textContent=p.name;
+    b.querySelector('.m').textContent='Path '+p.path+' · '+(PATHS[p.path-1]?.t||'');
+    b.onclick=()=>{cur=p.id;errMsg='';render()};
+    li.appendChild(b);ul.appendChild(li);
+  }
+}
+
+function renderStage(){
+  const st=$('#stage');const p=proj();
+  if(!p){
+    if(!draft.path){
+      st.innerHTML='<h2>What are we making today?</h2><p class="sub">Pick one of the seven paths. Reanimator asks a few questions, writes the script, and locks what you approve so it never drifts.</p><div class="paths" id="paths"></div>';
+      const box=$('#paths');
+      for(const x of PATHS){const b=document.createElement('button');b.type='button';b.className='path';
+        b.innerHTML='<span class="no">Path '+x.n+'</span><span class="t"></span><span class="d"></span>';
+        b.querySelector('.t').textContent=x.t;b.querySelector('.d').textContent=x.d;
+        b.onclick=()=>{draft.path=x.n;render()};box.appendChild(b)}
+    }else{
+      const x=PATHS[draft.path-1];
+      st.innerHTML='<p class="label">Path '+x.n+'</p><h2></h2><p class="sub">Two quick answers and we start.</p><p class="label">How should it be told?</p><div class="chips" id="aud"></div><p class="label">The brief</p><textarea id="brief" rows="4"></textarea><div class="row" style="margin-top:12px"><button class="btn go" id="startBtn" type="button">Start writing</button><button class="btn ghost" id="backBtn" type="button">Back to paths</button></div>';
+      st.querySelector('h2').textContent=x.t;$('#brief').placeholder=x.ph;$('#brief').value=draft.brief||'';
+      $('#brief').oninput=e=>{draft.brief=e.target.value;sync()};
+      const a=$('#aud');
+      for(const o of AUDIO){const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=o;
+        b.setAttribute('aria-pressed',String(draft.audio===o));b.onclick=()=>{draft.audio=o;render()};a.appendChild(b)}
+      const sync=()=>{$('#startBtn').disabled=!(draft.audio&&(draft.brief||'').trim())};sync();
+      $('#backBtn').onclick=()=>{draft={path:null,audio:null};render()};
+      $('#startBtn').onclick=startProject;
+    }
+    return;
+  }
+  st.innerHTML='<h2></h2><p class="sub" id="psub"></p>'+(errMsg?'<div class="err" role="alert"></div>':'')+'<div class="thread" id="thread"></div><div class="composer"><div class="row" id="quick"></div><textarea id="say" rows="2" placeholder="Answer, ask for changes, or say lock it."></textarea><div class="row"><button class="btn go" id="send" type="button">Send</button><button class="btn ghost" id="stop" type="button" hidden>Stop</button></div></div>';
+  st.querySelector('h2').textContent=p.name;
+  $('#psub').textContent='Path '+p.path+': '+PATHS[p.path-1].t+' · Audio: '+p.audio;
+  if(errMsg)st.querySelector('.err').textContent=errMsg;
+  const th=$('#thread');
+  p.msgs.forEach((m,i)=>{
+    if(i===0)return;
+    const d=document.createElement('div');d.className='msg '+(m.role==='user'?'me':'ai');
+    if(m.role==='user')d.textContent=m.content;else{d.innerHTML=md(m.content);
+      const t=document.createElement('div');t.className='tools';
+      const c=document.createElement('button');c.type='button';c.textContent='Copy';
+      c.onclick=async()=>{try{await navigator.clipboard.writeText(m.content);c.textContent='Copied'}catch(e){c.textContent='Select and copy by hand'}};
+      const l=document.createElement('button');l.type='button';l.textContent='Save as locked '+(p.stage==='style'?'frame':'script');
+      l.onclick=()=>{p.saved.push({at:Date.now(),text:m.content,kind:p.stage==='style'?'Frame':'Script'});save();renderSide()};
+      t.append(c,l);d.appendChild(t)}
+    th.appendChild(d);
+  });
+  if(busy){const d=document.createElement('div');d.className='msg ai';d.id='live';d.innerHTML='<span class="dots">Reanimating...</span>';th.appendChild(d)}
+  const q=$('#quick');
+  const quick=[['Lock it',"This is locked. Save it and tell me the next step."],['Make it more surprising','Rewrite it with a more surprising turn and a more specific environment.'],['Pick a style','Show me the nine image styles and help me choose one for this project.'],['Next frame','Write the next frame image prompt, one frame only.']];
+  for(const [a,b] of quick){const x=document.createElement('button');x.type='button';x.className='btn ghost';x.textContent=a;x.disabled=busy;x.onclick=()=>say(b,a);q.appendChild(x)}
+  $('#send').disabled=busy;$('#stop').hidden=!busy;$('#stop').onclick=()=>ctrl&&ctrl.abort();
+  const ta=$('#say');ta.onkeydown=e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();$('#send').click()}};
+  $('#send').onclick=()=>{const v=ta.value.trim();if(v){ta.value='';say(v)}};
+}
+
+function renderSide(){
+  const s=$('#side');const p=proj();
+  if(!p){s.innerHTML='<h3>Locked fields</h3><p class="small">Audio mode, characters, world, look and style stay put once you lock them. They show up here when a project starts.</p>';return}
+  s.innerHTML='<h3>Locked fields</h3><dl class="facts"><dt>Path</dt><dd></dd><dt>Audio</dt><dd></dd><dt>Style</dt><dd id="sv"></dd></dl><p class="label">Image style</p><select id="sty" aria-label="Image style"></select><button class="btn ghost" id="exp" type="button">Copy whole project</button><div id="saved"></div>';
+  const dd=s.querySelectorAll('dd');dd[0].textContent=PATHS[p.path-1].t;dd[1].innerHTML=esc(p.audio)+'<span class="lock">locked</span>';
+  $('#sv').innerHTML=p.style?esc(p.style)+'<span class="lock">locked</span>':'Not chosen';
+  const sel=$('#sty');sel.innerHTML='<option value="">Choose a style</option>'+STYLES.map(x=>'<option'+(p.style===x?' selected':'')+'>'+esc(x)+'</option>').join('');
+  sel.onchange=()=>{p.style=sel.value||null;if(p.style)p.stage='style';save();render();if(p.style)say('Style locked: '+p.style+'. Write the storyboard sheet prompt next, then wait for me before frame 1.','Style: '+p.style)};
+  $('#exp').onclick=async e=>{const t=p.saved.map(x=>'## '+x.kind+'\n'+x.text).join('\n\n')||p.msgs.slice(1).map(m=>(m.role==='user'?'KEN: ':'REANIMATOR: ')+m.content).join('\n\n');
+    try{await navigator.clipboard.writeText(t);e.target.textContent='Copied'}catch(_){e.target.textContent='Copy blocked here'}};
+  const sv=$('#saved');
+  if(p.saved.length){sv.className='saved';sv.innerHTML='<p class="label">Locked work</p>';
+    p.saved.forEach(x=>{const w=document.createElement('div');w.innerHTML='<strong></strong><pre></pre>';w.querySelector('strong').textContent=x.kind+' · '+new Date(x.at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});w.querySelector('pre').textContent=x.text;sv.appendChild(w)})}
+}
+function render(){renderRail();renderStage();renderSide()}
+
+function firstTurn(p){
+  return 'Path '+p.path+' ('+PATHS[p.path-1].t+'). Audio mode locked: '+p.audio+'. Brief from Ken: '+p.brief+'\n\nAudio mode and path are already chosen, so skip the opening menu and the audio question. Ask any remaining questions your instructions require, or start writing if you have enough.';
+}
+function startProject(){
+  const p={id:uid(),path:draft.path,audio:draft.audio,brief:draft.brief.trim(),style:null,stage:'script',saved:[],msgs:[],name:''};
+  p.name=p.brief.split(/\s+/).slice(0,5).join(' ')+(p.brief.split(/\s+/).length>5?'...':'');
+  p.msgs.push({role:'user',content:firstTurn(p)});
+  projects.unshift(p);cur=p.id;draft={path:null,audio:null};save();render();run();
+}
+function say(text){const p=proj();if(!p||busy)return;p.msgs.push({role:'user',content:text});save();render();run()}
+
+async function run(){
+  const p=proj();if(!p)return;busy=true;errMsg='';render();
+  const sample=await claude.use('sample');
+  if(!sample){busy=false;errMsg='Claude is not available in this view. Open the page from your claude.ai artifact link while signed in.';render();return}
+  let pre='You are Reanimator 10. Follow these instructions exactly.\n\n'+BRAIN+'\n\n'+RULES;
+  if(p.path===7)pre+='\n\nSERIES BIBLE (structural authority for Vertical Series):\n'+BIBLE;
+  if(p.stage==='style'||p.msgs.some(m=>/style/i.test(m.content)))pre+='\n\nIMAGE STYLE LIBRARY:\n'+STYLES_DOC;
+  const turns=p.msgs.map((m,i)=>({role:m.role,content:i===0?pre+'\n\n---\n\n'+m.content:m.content}));
+  ctrl=new AbortController();
+  try{
+    const r=await sample(turns,{modelTier:'complex',cache:false,signal:ctrl.signal,onText:({text})=>{const l=$('#live');if(l){l.innerHTML=md(text)}}});
+    p.msgs.push({role:'assistant',content:r.text});
+  }catch(e){
+    if(e&&e.text)p.msgs.push({role:'assistant',content:e.text});
+    if(e&&e.code==='cancelled'){}
+    else if(e&&e.code==='not_granted')errMsg='Permission to ask Claude was declined. Send again and allow it.';
+    else if(e&&e.code==='rate_limited')errMsg='Too many requests right now. Wait a minute and send again.';
+    else errMsg='Something went wrong: '+((e&&e.message)||'unknown error')+'. Send your message again.';
+  }
+  busy=false;save();render();
+  window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
+}
+$('#newBtn').onclick=()=>{cur=null;draft={path:null,audio:null};errMsg='';render()};
+if(projects.length)cur=projects[0].id;
+render();
+</script>
