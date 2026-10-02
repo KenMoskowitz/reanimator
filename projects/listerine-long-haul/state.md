@@ -16,7 +16,7 @@ reanimator:
     style_locked: true   # locked by Ken
   storyboard:
     generated: true
-    current_frame: 1   # frame 1 delivered
+    current_frame: 2   # frame 2 delivered
 ```
 
-Next step: Ken answers: next frame or adjust frame 1? One frame at a time.
+Next step: Ken answers: next frame or adjust frame 2? One frame at a time.

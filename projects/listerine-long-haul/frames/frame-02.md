@@ -1,0 +1,5 @@
+# FRAME 2 OF 12: Disruption
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Medium shot inside a dim, cold blue airplane cabin at night, row 41. In the middle ground, Gary, a heavy-set white man in his 60s with gray stubble, thinning gray hair and a tan travel vest, sleeps with his mouth open and a blue neck pillow crooked around his neck. On his tray table sits a half-eaten cup of garlic hummus with a plastic spoon. In the blurred foreground, the edge of Priya's shoulder and her flattened black hair, her gray zip hoodie, rigid and tense, turned slightly away from him. A gray scratchy blanket over Gary's lap. Soft diffused blue cabin light, heavy 35mm grain, anamorphic bokeh, soft halation around the small overhead lights, shallow depth of field with Gary and the hummus cup sharp. Cold blue and steel gray palette. Same cabin and lighting as frame 1. One image only.
