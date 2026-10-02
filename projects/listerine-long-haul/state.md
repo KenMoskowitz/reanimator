@@ -12,11 +12,11 @@ reanimator:
   open_questions:
     - Any Listerine claims? Draft makes no health or germ claims.
   visual:
-    style_selected:
-    style_locked: false
+    style_selected: Realistic 35mm Film   # chosen by Ken
+    style_locked: false   # waiting on style bible approval
   storyboard:
     generated: false
     current_frame: 1
 ```
 
-Next step: style selection. Ken picks one of the nine styles or supplies a reference image. No imagery before that.
+Next step: Ken approves or edits the style bible (characters, environment, camera). Then the 12-panel storyboard sheet.
