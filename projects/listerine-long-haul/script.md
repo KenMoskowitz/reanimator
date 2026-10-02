@@ -1,10 +1,10 @@
 # PRIYA LANDS AFTER FOURTEEN HOURS
 
-Project: Personal brand / service / client (Path 3). Brand: Listerine. Product: new 3.2 oz travel size bottle. Audio: both (voice over + dialogue). Runtime: 60 seconds. Status: draft, not locked.
+Project: Personal brand / service / client (Path 3). Brand: Listerine. Product: new Listerine Cool Mint (the blue one) 3.2 oz travel size bottle. No call to action (Ken's call). Audio: both (voice over + dialogue). Runtime: 60 seconds. Status: draft, not locked.
 
 ## Audience
 
-Travelers on flights of 14 hours or more, about to land. Pain: horrible breath right before they meet someone. Solution: the 3.2 oz travel size, small enough for a carry-on.
+Travelers on flights of 14 hours or more, about to land. Pain: horrible breath right before they meet someone. Solution: the 3.2 oz travel size, small enough for a carry-on. No call to action.
 
 ## 00:00 - 00:10 HOOK
 
@@ -62,7 +62,7 @@ GARY: Rough flight?
 
 PRIYA (whispering, hand over mouth): I can't breathe at him. I mean at anyone.
 
-She digs through her backpack in a panic. Chargers. A passport. A sock. Her fingers hit the zip pocket and she stops. She pulls out a bottle small enough to hide in one hand. Blue. Clear. Marked in tiny print: 3.2 oz. A sticky note is stuck to the side, in her mom's handwriting.
+She digs through her backpack in a panic. Chargers. A passport. A sock. Her fingers hit the zip pocket and she stops. She pulls out a bottle small enough to hide in one hand. Bright blue Cool Mint Listerine, the label marked 3.2 fl oz. A sticky note is stuck to the side, in her mom's handwriting.
 
 SOUND: one low, clean chime, like a bell in a quiet church.
 
@@ -98,9 +98,11 @@ ELI: Wow. Fourteen hours, and you taste like mint.
 
 PRIYA (V.O.): Fourteen hours. Three point two ounces.
 
-ON-SCREEN: NEW LISTERINE TRAVEL SIZE. 3.2 OZ. FITS YOUR CARRY-ON. PACK IT BEFORE YOU FLY.
+ON-SCREEN: LISTERINE COOL MINT. NEW 3.2 OZ TRAVEL SIZE.
 
-PRIYA (V.O.): Pack it before you fly.
+Priya turns to the camera, still holding Eli's face, and grins.
+
+PRIYA: Mom was right.
 
 SOUND: arrivals doors chime, crowd noise rising. Cut.
 
