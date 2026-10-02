@@ -1,6 +1,6 @@
 # PRIYA LANDS AFTER FOURTEEN HOURS
 
-Project: Personal brand / service / client (Path 3). Brand: Listerine. Product: new Listerine Cool Mint (the blue one) 3.2 oz travel size bottle. No call to action (Ken's call). Audio: both (voice over + dialogue). Runtime: 60 seconds. Status: draft, not locked.
+Project: Personal brand / service / client (Path 3). Brand: Listerine. Product: new Listerine Cool Mint (the blue one) 3.2 oz travel size bottle. No call to action (Ken's call). Audio: both (voice over + dialogue). Runtime: 60 seconds. Status: LOCKED.
 
 ## Audience
 
