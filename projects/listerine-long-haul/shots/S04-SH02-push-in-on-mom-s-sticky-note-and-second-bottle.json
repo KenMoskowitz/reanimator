@@ -1,0 +1,52 @@
+{
+  "shot_id": "S04-SH02",
+  "scene": 4,
+  "shot": 2,
+  "shot_name": "Push-in on Mom's sticky note and second bottle",
+  "duration_seconds": 7,
+  "setting": "Interior airplane cabin, row 41, seat B, lights now on, harsh pale white, gray dawn in the window.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "bottle-product-sheet"
+    ],
+    "notes": "Two identical small bottles. Sticky note reads: One for you. One for whoever sits next to you."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    }
+  ],
+  "action": "Priya holds the first bottle with its sticky note. At 0.5 seconds she reads the note out loud, then digs in the zip pocket and finds a second tiny bottle. She holds both and smiles through the final second.",
+  "dialogue": [
+    {
+      "speaker": "Priya",
+      "line": "One for you. One for whoever sits next to you.",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 6 seconds (one full second before shot end)."
+    }
+  ],
+  "voiceover": null,
+  "camera": {
+    "start": "Close-up on the sticky note on the bottle in her hand",
+    "movement": "Single slow push-in to the second bottle appearing from the pocket",
+    "end": "Close-up on both bottles in her hands",
+    "lens": "50mm equivalent, shallow depth of field"
+  },
+  "lighting": "Pale cabin white with gray dawn rim light",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Zipper pull, soft engine hum, paper note crinkle",
+    "sound_effects": [
+      "zipper pull at 4 seconds"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

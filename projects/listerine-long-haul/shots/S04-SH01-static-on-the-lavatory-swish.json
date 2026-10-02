@@ -1,0 +1,54 @@
+{
+  "shot_id": "S04-SH01",
+  "scene": 4,
+  "shot": 1,
+  "shot_name": "Static on the lavatory swish",
+  "duration_seconds": 8,
+  "setting": "Interior airplane lavatory, tiny, scuffed white walls, steel sink and mirror, cold flickering white fluorescent light.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "bottle-product-sheet",
+      "lavatory-location-sheet"
+    ],
+    "notes": "Keep the blue bottle sharp in her hand."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    }
+  ],
+  "action": "Priya twists the cap and swishes with puffed cheeks and squeezed eyes. She spits, breathes into her palm, sniffs, and her face goes from tragic to stunned to a huge grin. She holds the grin through the final second.",
+  "dialogue": [
+    {
+      "speaker": "Priya",
+      "line": "Oh. OH. I smell like a person again.",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 7 seconds (one full second before shot end)."
+    }
+  ],
+  "voiceover": null,
+  "camera": {
+    "start": "Medium close-up in the lavatory mirror, Priya and her reflection",
+    "movement": "Static hold, subtle handheld breathing only",
+    "end": "Same framing",
+    "lens": "35mm equivalent, shallow depth of field"
+  },
+  "lighting": "Cold flickering white fluorescent, the bottle as the cleanest blue",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Engine hum, faucet drip, fluorescent buzz",
+    "sound_effects": [
+      "cap twist at 0.5 seconds",
+      "swish and spit at 2 seconds"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

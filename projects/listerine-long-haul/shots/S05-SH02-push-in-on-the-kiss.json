@@ -1,0 +1,76 @@
+{
+  "shot_id": "S05-SH02",
+  "scene": 5,
+  "shot": 2,
+  "shot_name": "Push-in on the kiss",
+  "duration_seconds": 9,
+  "setting": "Interior Sydney airport arrivals hall at dawn, tall glass walls, gray dawn light mixing with warm gold terminal light, a crowd of waiting people.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "eli-character-sheet",
+      "gary-character-sheet",
+      "arrivals-location-sheet"
+    ],
+    "notes": "Gary walks past in the background with a wheeled bag and a thumbs up."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    },
+    {
+      "name": "Eli",
+      "description": "Tall lanky white man in his early 30s, messy sandy hair, three-day stubble, rumpled green jacket over a gray tee, holding a cardboard sign reading PRIYA with a heart",
+      "voice": {
+        "tone": "breathless, amazed, warm",
+        "accent": "Australian",
+        "gender": "male"
+      }
+    },
+    {
+      "name": "Gary",
+      "description": "Heavy-set white man in his 60s, gray stubble, thinning gray hair, tan travel vest, blue neck pillow",
+      "voice": {
+        "tone": "friendly, gravelly, sleepy",
+        "accent": "American Midwest",
+        "gender": "male"
+      }
+    }
+  ],
+  "action": "Priya grabs Eli's face and kisses him. He holds it a long second, eyes open, surprised. Gary walks past in the background and gives a small thumbs up. Priya and Eli hold their grin through the final second.",
+  "dialogue": [
+    {
+      "speaker": "Eli",
+      "line": "Wow. Fourteen hours, and you taste like mint.",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 8 seconds (one full second before shot end)."
+    }
+  ],
+  "voiceover": {
+    "speaker": "Priya",
+    "line": "Fourteen hours. Three point two ounces.",
+    "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 8 seconds (one full second before shot end)."
+  },
+  "camera": {
+    "start": "Medium shot, both framed from the chest up, Gary out of focus behind",
+    "movement": "Single slow push-in",
+    "end": "Close-up on their faces",
+    "lens": "50mm equivalent, shallow depth of field"
+  },
+  "lighting": "Warm gold terminal light and gray dawn, soft halation",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Arrivals crowd murmur, rolling bag wheels, a soft kiss sound, footsteps",
+    "sound_effects": [
+      "wheeled bag rolling past at 5 seconds"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

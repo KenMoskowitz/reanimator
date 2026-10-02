@@ -1,0 +1,51 @@
+{
+  "shot_id": "S02-SH04",
+  "scene": 2,
+  "shot": 4,
+  "shot_name": "Static on phone and Mom's text",
+  "duration_seconds": 6,
+  "setting": "Interior airplane lavatory, tiny, scuffed white walls, steel sink and mirror, cold flickering white fluorescent light.",
+  "references": {
+    "contact_sheets": [
+      "lavatory-location-sheet",
+      "phone-prop-sheet"
+    ],
+    "notes": "Phone screen shows a text from Mom. Readable text: Check the zip pocket, honey."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Captain (intercom)",
+      "description": "Unseen pilot on the cabin PA",
+      "voice": {
+        "tone": "calm, routine",
+        "accent": "Australian",
+        "gender": "male"
+      }
+    }
+  ],
+  "action": "A phone rests on the steel sink, screen lit with Mom's long text. At 0.5 seconds a thumb swipes the message away. The phone screen goes dark, and the sink holds still through the final second.",
+  "dialogue": [],
+  "voiceover": {
+    "speaker": "Captain",
+    "line": "Folks, we are starting our descent. Please return to your seats.",
+    "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 5 seconds (one full second before shot end)."
+  },
+  "camera": {
+    "start": "Close-up on the phone on the sink",
+    "movement": "Static hold",
+    "end": "Same framing",
+    "lens": "50mm equivalent, shallow depth of field"
+  },
+  "lighting": "Cold white fluorescent, the phone glow is the warmest light",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Engine hum, a soft cabin intercom chime, a muffled airline PA voice only",
+    "sound_effects": [
+      "intercom chime at 0.4 seconds",
+      "thumb swipe on glass at 0.5 seconds"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

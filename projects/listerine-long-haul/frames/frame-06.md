@@ -1,0 +1,5 @@
+# FRAME 6 OF 12: Escalation
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Flashback. A bright, beige, busy security line at LAX in daylight. A TSA officer in a blue uniform and gloves lifts a full-size blue Listerine Cool Mint bottle out of an open black backpack over a gray bin full of confiscated bottles. In the foreground, Priya, an early 30s South Asian woman, 5'5", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, shrugging lightly, hands up, carefree. Washed-out beige and fluorescent white palette, slightly overexposed, soft diffused light, the only saturated color is the blue bottle. Heavy 35mm grain, anamorphic bokeh, soft halation around lights, shallow depth of field. One image only.

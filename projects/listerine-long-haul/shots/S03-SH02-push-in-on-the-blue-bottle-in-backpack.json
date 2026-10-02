@@ -1,0 +1,47 @@
+{
+  "shot_id": "S03-SH02",
+  "scene": 3,
+  "shot": 2,
+  "shot_name": "Push-in on the blue bottle in backpack",
+  "duration_seconds": 6,
+  "setting": "Interior airplane cabin, row 41, seat B, lights now on, harsh pale white, gray dawn in the window.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "bottle-product-sheet"
+    ],
+    "notes": "Bottle is Listerine Cool Mint, 3.2 fl oz, black striped cap, sticky note on the side. Keep it the cleanest color in the frame."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    }
+  ],
+  "action": "Priya digs through her black backpack past chargers, a passport and a sock. Her fingers hit the zip pocket and stop. She pulls out the small bright blue bottle and holds it in her fist, relieved.",
+  "dialogue": [],
+  "voiceover": null,
+  "camera": {
+    "start": "Medium close-up on Priya's hands in the backpack, her face soft behind",
+    "movement": "Single slow push-in to the bottle in her raised fist",
+    "end": "Close-up on the bottle sharp in the foreground, Priya blurred behind",
+    "lens": "50mm equivalent, shallow depth of field"
+  },
+  "lighting": "Pale cabin white with a cool blue cast, the bottle glows as the cleanest color",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Zipper pull, rustling bag, engine hum",
+    "sound_effects": [
+      "zipper pull at 1.5 seconds",
+      "one soft clean chime at 3 seconds"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

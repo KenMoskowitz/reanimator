@@ -1,0 +1,62 @@
+{
+  "shot_id": "S04-SH03",
+  "scene": 4,
+  "shot": 3,
+  "shot_name": "Static on the bottle sliding onto Gary's tray",
+  "duration_seconds": 6,
+  "setting": "Interior airplane cabin, row 41, seat B, lights now on, harsh pale white, gray dawn in the window.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "gary-character-sheet",
+      "bottle-product-sheet"
+    ],
+    "notes": "The bottle lands next to the hummus cup."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    },
+    {
+      "name": "Gary",
+      "description": "Heavy-set white man in his 60s, gray stubble, thinning gray hair, tan travel vest, blue neck pillow",
+      "voice": {
+        "tone": "friendly, gravelly, sleepy",
+        "accent": "American Midwest",
+        "gender": "male"
+      }
+    }
+  ],
+  "action": "Priya slides the second small blue bottle onto Gary's tray next to the garlic hummus. Gary reads the label, shrugs, and smiles. He keeps smiling through the final second.",
+  "dialogue": [
+    {
+      "speaker": "Priya",
+      "line": "Trust me.",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 5 seconds (one full second before shot end)."
+    }
+  ],
+  "voiceover": null,
+  "camera": {
+    "start": "Medium shot on the tray table, Priya's hand entering from the left, Gary behind",
+    "movement": "Static hold",
+    "end": "Same framing",
+    "lens": "35mm equivalent, shallow depth of field"
+  },
+  "lighting": "Cold blue and steel gray with a warm orange rim of dawn from the window",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Engine hum, plastic tray click",
+    "sound_effects": [
+      "bottle sliding onto the tray at 1 second"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

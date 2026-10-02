@@ -1,0 +1,5 @@
+# FRAME 8 OF 12: Escalation
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Medium shot in seat 41B. The cabin lights are now on, a harsh pale white. Gary, a heavy-set white man in his 60s with gray stubble, thinning gray hair, a tan travel vest and a blue neck pillow, just waking, turns toward Priya with a friendly open face. In the foreground, Priya, an early 30s South Asian woman, 5'5", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings jerks back against the window with one hand clamped hard over her mouth and wide eyes. Gray scratchy blankets, a window with a thin orange dawn line. Cold gray-white palette, soft diffused light. Heavy 35mm grain, anamorphic bokeh, soft halation around lights, shallow depth of field. One image only.

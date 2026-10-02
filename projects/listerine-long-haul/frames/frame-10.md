@@ -1,0 +1,5 @@
+# FRAME 10 OF 12: Payoff
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Medium close-up in the tiny airplane lavatory mirror. Priya, an early 30s South Asian woman, 5'5", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings swishing mouthwash with her cheeks puffed and her eyes squeezed shut, holding a bright blue Listerine Cool Mint bottle, 3.2 fl oz travel size, black striped cap, small sticky note on the side in her hand. A hint of a grin breaking through the effort, stunned and delighted. Cold flickering white fluorescent light, steel gray palette, the bright blue bottle as the cleanest color in the frame. Heavy 35mm grain, anamorphic bokeh, soft halation around lights, shallow depth of field. One image only.

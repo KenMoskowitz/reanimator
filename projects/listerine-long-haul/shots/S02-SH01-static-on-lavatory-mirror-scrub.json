@@ -1,0 +1,51 @@
+{
+  "shot_id": "S02-SH01",
+  "scene": 2,
+  "shot": 1,
+  "shot_name": "Static on lavatory mirror scrub",
+  "duration_seconds": 8,
+  "setting": "Interior airplane lavatory, tiny, scuffed white walls, steel sink and mirror, cold flickering white fluorescent light.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "lavatory-location-sheet"
+    ],
+    "notes": "Mirror framing shows her in profile and in reflection."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    }
+  ],
+  "action": "Priya scrubs her teeth with one finger and a brown paper towel, cheek pulled back, desperate. At 0.5 seconds she spits into the sink and grimaces. She stares at herself in the mirror through the final second.",
+  "dialogue": [],
+  "voiceover": {
+    "speaker": "Priya",
+    "line": "My teeth are wearing tiny sweaters. My tongue is a dry sock.",
+    "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 7 seconds (one full second before shot end)."
+  },
+  "camera": {
+    "start": "Medium close-up, Priya in profile with her reflection in the steel mirror",
+    "movement": "Static hold, subtle handheld breathing only",
+    "end": "Same framing",
+    "lens": "35mm equivalent, shallow depth of field"
+  },
+  "lighting": "Cold flickering white fluorescent from above with a slight green cast",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Engine rumble through the thin walls, faucet drip, fluorescent hum",
+    "sound_effects": [
+      "quick spit into the sink at 0.5 seconds",
+      "paper towel crinkle"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

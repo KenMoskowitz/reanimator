@@ -1,0 +1,50 @@
+{
+  "shot_id": "S05-SH03",
+  "scene": 5,
+  "shot": 3,
+  "shot_name": "Static on Priya turning to camera",
+  "duration_seconds": 4,
+  "setting": "Interior Sydney airport arrivals hall at dawn, tall glass walls, gray dawn light mixing with warm gold terminal light, a crowd of waiting people.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "arrivals-location-sheet"
+    ],
+    "notes": "Eli's shoulder is partly in frame."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    }
+  ],
+  "action": "Priya, still holding Eli's face, turns to the camera with a big grin. At 1 second she says her line, then keeps grinning to the end.",
+  "dialogue": [
+    {
+      "speaker": "Priya",
+      "line": "Mom was right.",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 3 seconds (one full second before shot end)."
+    }
+  ],
+  "voiceover": null,
+  "camera": {
+    "start": "Close-up on Priya, Eli's shoulder in the foreground",
+    "movement": "Static hold",
+    "end": "Same framing",
+    "lens": "50mm equivalent, shallow depth of field"
+  },
+  "lighting": "Warm gold terminal light, soft halation",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Arrivals murmur, doors whooshing in the distance",
+    "sound_effects": [],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

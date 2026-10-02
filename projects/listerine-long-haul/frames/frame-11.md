@@ -1,0 +1,5 @@
+# FRAME 11 OF 12: Resolution
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Medium shot at seat 41B in the cabin's gray dawn light. Priya, an early 30s South Asian woman, 5'5", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings's hand slides a second small bright blue Listerine Cool Mint bottle (3.2 fl oz, black striped cap, sticky note) onto the tray table beside a half-eaten cup of garlic hummus. Gary, a heavy-set white man in his 60s with gray stubble, thinning gray hair, a tan travel vest and a blue neck pillow looks down, reads the label, and smiles with a small shrug. Cold blue and steel gray palette with a warm orange rim of dawn from the window. Heavy 35mm grain, anamorphic bokeh, soft halation around lights, shallow depth of field. One image only.

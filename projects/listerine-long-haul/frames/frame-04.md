@@ -1,0 +1,5 @@
+# FRAME 4 OF 12: Curiosity
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Medium close-up inside a tiny airplane lavatory under a cold, flickering white fluorescent light. Priya, an early 30s South Asian woman, 5'5", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, seen in the steel mirror and in profile, scrubbing her teeth with one finger and a brown paper towel, her cheek pulled back, tired and desperate. Steel sink, a tiny soap dispenser, scuffed white walls. Cold steel gray and white palette with a green-ish fluorescent cast, soft diffused light. Heavy 35mm grain, anamorphic bokeh, soft halation around lights, shallow depth of field. One image only.

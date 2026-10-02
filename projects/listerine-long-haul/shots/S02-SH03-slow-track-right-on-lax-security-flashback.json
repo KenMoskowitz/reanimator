@@ -1,0 +1,67 @@
+{
+  "shot_id": "S02-SH03",
+  "scene": 2,
+  "shot": 3,
+  "shot_name": "Slow track right on LAX security flashback",
+  "duration_seconds": 8,
+  "setting": "Interior LAX security checkpoint, daytime, bright beige walls, busy line, gray bins, harsh fluorescent light, washed-out and slightly overexposed.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "bottle-product-sheet",
+      "lax-location-sheet"
+    ],
+    "notes": "The confiscated bottle is a full-size blue Listerine Cool Mint. Keep it the one saturated color in the shot."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    },
+    {
+      "name": "TSA Officer",
+      "description": "TSA officer in a blue uniform and gloves, tired and polite",
+      "voice": {
+        "tone": "flat, routine, polite",
+        "accent": "American",
+        "gender": "male"
+      }
+    }
+  ],
+  "action": "A TSA officer lifts a full-size blue Listerine bottle out of Priya's open black backpack and drops it into a bin full of confiscated bottles. Priya shrugs, carefree. After the lines she keeps shrugging and smiling through the final second.",
+  "dialogue": [
+    {
+      "speaker": "Officer",
+      "line": "Too big for carry-on, ma'am.",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 7 seconds (one full second before shot end)."
+    },
+    {
+      "speaker": "Priya",
+      "line": "It's fine. It's one night. What could happen?",
+      "timing": "Begins no earlier than 0.5 seconds in. Ends no later than 7 seconds (one full second before shot end)."
+    }
+  ],
+  "voiceover": null,
+  "camera": {
+    "start": "Medium shot, officer and Priya at the bin",
+    "movement": "Single slow lateral track to the right",
+    "end": "Priya framed alone at the right edge, bin blurred",
+    "lens": "40mm equivalent, shallow depth of field"
+  },
+  "lighting": "Washed-out beige and white fluorescent, bright and flat",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Crowd murmur, rolling bag wheels, conveyor hum, distant security announcements with no music",
+    "sound_effects": [
+      "plastic clunk of the bottle dropping into the bin at 1 second"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

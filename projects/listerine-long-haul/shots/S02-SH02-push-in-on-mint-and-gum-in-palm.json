@@ -1,0 +1,46 @@
+{
+  "shot_id": "S02-SH02",
+  "scene": 2,
+  "shot": 2,
+  "shot_name": "Push-in on mint and gum in palm",
+  "duration_seconds": 4,
+  "setting": "Interior airplane lavatory, tiny, scuffed white walls, steel sink and mirror, cold flickering white fluorescent light.",
+  "references": {
+    "contact_sheets": [
+      "priya-character-sheet",
+      "lavatory-location-sheet"
+    ],
+    "notes": "Only her open palm and a blurred gold stud earring need to match."
+  },
+  "style": "Gritty 1990s 35mm film look, heavy film grain, anamorphic bokeh, soft halation around lights, handheld feel, soft diffused light, raw and nostalgic. 9:16 vertical.",
+  "characters": [
+    {
+      "name": "Priya",
+      "description": "Early 30s South Asian woman, 5'5\", medium build, warm brown skin, dark brown eyes, shoulder-length black hair flattened on one side, gray zip hoodie, white tee, black leggings, white sneakers, black backpack, small gold stud earrings, black eye mask pushed up on her forehead on the plane",
+      "voice": {
+        "tone": "warm, wry, increasingly panicked, then delighted",
+        "accent": "American, Southern California",
+        "gender": "female"
+      }
+    }
+  ],
+  "action": "Priya's open palm holds an old fuzzy gray mint. A stick of gum crumbles into pale dust beside it. Dust falls past the blurred sink. The palm stays steady through the final second.",
+  "dialogue": [],
+  "voiceover": null,
+  "camera": {
+    "start": "Close-up on her open palm",
+    "movement": "Single slow push-in",
+    "end": "Extreme close-up on the mint and the gum dust",
+    "lens": "85mm macro-style, very shallow depth of field"
+  },
+  "lighting": "Cold white fluorescent, soft diffused",
+  "audio": {
+    "music": "NONE. Absolutely no music, no score, no soundtrack, no background songs of any kind.",
+    "natural_sound": "Faint fluorescent buzz, engine hum",
+    "sound_effects": [
+      "tiny crumble of gum at 1 second"
+    ],
+    "voice_timing_rule": "Complete silence from voices for the first 0.5 seconds and the final 1.0 second of the shot"
+  },
+  "negative_prompt": "no music, no score, no soundtrack, no singing, no humming, no background music, no musical instruments audible, no jump cuts, no additional camera moves beyond the single specified movement, no on-screen text, no captions, no subtitles, no watermark, no logos other than the Listerine label on the bottle"
+}

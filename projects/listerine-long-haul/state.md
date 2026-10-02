@@ -16,7 +16,7 @@ reanimator:
     style_locked: true   # locked by Ken
   storyboard:
     generated: true
-    current_frame: 2   # frame 2 delivered
+    current_frame: 12   # all 12 frame prompts delivered at Ken request, plus 14 video shot files in shots/
 ```
 
-Next step: Ken answers: next frame or adjust frame 2? One frame at a time.
+Next step: Ken reviews frames and shots. Trim the cut to 60 seconds in the edit.
