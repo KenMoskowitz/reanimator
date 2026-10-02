@@ -16,7 +16,7 @@ reanimator:
     style_locked: true   # locked by Ken
   storyboard:
     generated: true
-    current_frame: 1
+    current_frame: 1   # frame 1 delivered
 ```
 
-Next step: storyboard sheet generated (frames/storyboard-sheet.md). Ken answers: new pass or ready to extract?
+Next step: Ken answers: next frame or adjust frame 1? One frame at a time.

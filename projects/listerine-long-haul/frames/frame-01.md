@@ -1,0 +1,5 @@
+# FRAME 1 OF 12: Disruption
+
+IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene.
+
+Vertical 9:16, high detail. Extreme close-up of Priya, an early 30s South Asian woman with warm brown skin, dark brown eyes and shoulder-length black hair flattened on one side from the headrest. A black eye mask is pushed up onto her forehead. She wears a gray zip hoodie and small gold stud earrings. She sits upright and wide awake in a dim, cold blue airplane cabin at night, one hand cupped tight over her mouth and nose, eyes wide with dread. Behind her, soft out-of-focus rows of sleeping passengers under gray scratchy blankets and a thin orange line of dawn in a window. Soft diffused blue cabin light, heavy 35mm grain, anamorphic bokeh, soft halation around the small overhead lights, shallow depth of field with her eyes sharp. Cold blue and steel gray palette. One image only.
