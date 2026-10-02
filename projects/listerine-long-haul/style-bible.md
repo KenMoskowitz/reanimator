@@ -1,4 +1,4 @@
-# STYLE BIBLE (PROPOSED, NOT LOCKED): Priya Lands After Fourteen Hours
+# STYLE BIBLE (LOCKED): Priya Lands After Fourteen Hours
 
 Style: Realistic 35mm Film. Source language: "IMG_1036.CR2 Capture a gritty, mid day overcast atmospheric 1990s cinematic shot on 35mm film. The overall tone is raw with film grain enhancing the grungy, nostalgic aesthetic characteristic of 1990s film. The lighting is soft and diffused, introspective mood of the scene."
 Aspect ratio: 9:16 on every frame.

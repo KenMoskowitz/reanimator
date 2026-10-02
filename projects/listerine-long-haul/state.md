@@ -13,10 +13,10 @@ reanimator:
     - Any Listerine claims? Draft makes no health or germ claims.
   visual:
     style_selected: Realistic 35mm Film   # chosen by Ken
-    style_locked: false   # waiting on style bible approval
+    style_locked: true   # locked by Ken
   storyboard:
-    generated: false
+    generated: true
     current_frame: 1
 ```
 
-Next step: Ken approves or edits the style bible (characters, environment, camera). Then the 12-panel storyboard sheet.
+Next step: storyboard sheet generated (frames/storyboard-sheet.md). Ken answers: new pass or ready to extract?
