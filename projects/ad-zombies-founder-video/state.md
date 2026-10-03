@@ -12,9 +12,10 @@ reanimator:
     - Slide continued into 2025, down to $1,000 a month in recurring revenue.
     - Cancer diagnosis in May 2023.
     - Gary is okay being named.
+    - 40 AI employees, 32 visible. Script says forty and shows the 32.
+    - Call to action is workshop.adzombies.com (Ken is building it).
   open_questions:
-    - 40 AI employees (Ken) vs 32 agents in seven departments (the website kit page). Which number goes on camera?
-    - Workshop call to action: link, dates, price, and what attendees leave with. The website has no page for the three day workshop.
+    - Workshop page must be live before the video runs. Dates, price and outcomes go on that page.
     - Which brand do the screen recordings use? A made-up brand is safest.
   visual:
     style_selected:
