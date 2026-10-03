@@ -60,11 +60,11 @@ KEN: I got close. Real close. I learned how AI thinks, what it's good at, and wh
 
 Screen recordings, real time, with a visible clock. Ken's voice over the footage. Cut between R1 to R5 (see the recording list).
 
-[R5: THE TEAM. A roster of your AI team on screen.]
+[R5: THE TEAM. The 32 visible agents listed on screen.]
 
 KEN: Today I run a team of forty AI employees. A creative director. Copywriters. Art directors. Web developers. UX and UI designers.
 
-KEN: They don't take lunch. They don't call in sick. And they don't miss a deadline.
+KEN: Forty of them. Thirty-two you can see right here. They don't take lunch. They don't call in sick. And they don't miss a deadline.
 
 [R1: THE DIRECTOR. You type a plain brief. The creative director hands it to the right department.]
 
@@ -94,9 +94,9 @@ KEN: Mine is on its way to being the first. And the enemy? It works for me now.
 
 Ken back at the edge of the pool, close on his face.
 
-KEN: I'm teaching a three day workshop called Build Your AI Team. You'll sit next to me and build yours.
+KEN: I'm teaching a three day workshop called Build Your AI Team. You'll sit next to me and build yours. Go to workshop dot adzombies dot com.
 
-[ON-SCREEN CALL TO ACTION: [CONFIRM: link, dates, price and what attendees leave with]]
+[ON-SCREEN CALL TO ACTION: WORKSHOP.ADZOMBIES.COM]
 
 KEN: The thing that was destroying my business is the thing that rebuilt it. Biggest blessing of my life.
 
@@ -134,5 +134,5 @@ Note: The site says proposals, deliverables and ad spend always wait for you. Bl
 
 Show the list of your AI team, the creative director, copywriters, art directors, web developers and UX and UI designers.
 
-Note: The site says 32 agents in seven departments for the kit, and you say 40 AI employees. Show the roster that adds up to 40, or say 32.
+Note: You have 40 AI employees and 32 are visible. Show the 32 on screen and say so, so the number matches what people see.
 
