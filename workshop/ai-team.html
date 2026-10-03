@@ -1,0 +1,108 @@
+<title>Build Your AI Team</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one long page. Hero, then a timeline from 2023 to today, then three workshop days, outcome, who it is for, and a closing sign-up block. Light only. */
+:root{
+  --ground:#F4F7F3; --panel:#FFFFFF; --ink:#14201A; --muted:#566559; --line:#D5DED6;
+  --accent:#1B8A4B; --accent-ink:#0E4D2A; --accent-soft:#E2F2E7; --todo:#FFF1CC; --todo-ink:#6B4A00;
+  --display:'Bricolage Grotesque','Trebuchet MS',sans-serif; --body:'DM Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:16px;padding-block:0}
+.wrap{max-width:1040px;margin:0 auto}
+a{color:var(--accent-ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 12px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,8vw,84px);line-height:.98;letter-spacing:-.03em;margin:0 0 20px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(28px,4.5vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:21px;margin:0 0 6px}
+p{margin:0 0 14px;max-width:62ch}
+.hero{padding-block:56px 40px}
+.lead{font-size:clamp(19px,2.4vw,24px);max-width:36ch;line-height:1.4;margin-bottom:24px}
+.days-line{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.pill{border:2px solid var(--ink);border-radius:99px;padding:6px 18px;font-weight:700}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:14px 26px}
+.btn:hover{background:var(--accent-ink)}
+.todo{background:var(--todo);color:var(--todo-ink);font-family:var(--mono);font-size:12px;padding:2px 8px;border-radius:4px;white-space:nowrap}
+section{padding-block:44px;border-top:1px solid var(--line)}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:24px;position:relative}
+.tl::before{content:"";position:absolute;left:10%;right:10%;top:9px;height:3px;background:var(--line)}
+.step{position:relative;padding:0 8px;text-align:center}
+.dot{width:20px;height:20px;border-radius:50%;background:var(--panel);border:3px solid var(--ink);margin:0 auto 12px;position:relative}
+.step.low .dot{border-color:#B4452F}.step.now .dot{background:var(--accent);border-color:var(--accent)}
+.when{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0}
+.what{font-family:var(--display);font-weight:700;font-size:17px;line-height:1.2;margin:4px auto 0;max-width:16ch}
+@media(max-width:720px){.tl{grid-template-columns:1fr;gap:20px}.tl::before{left:9px;right:auto;top:10px;bottom:10px;width:3px;height:auto}.step{text-align:left;padding-left:40px}.dot{position:absolute;left:0;top:2px;margin:0}.what{margin:4px 0 0;max-width:none}}
+/* days */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}
+.day .d{font-family:var(--display);font-weight:800;font-size:34px;line-height:1;letter-spacing:-.02em;margin:0 0 4px}
+.day .tag{font-family:var(--mono);font-size:12px;color:var(--accent-ink);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:99px;margin-bottom:12px}
+.day ul{margin:0;padding-left:20px}.day li{margin-bottom:6px}
+.out{background:var(--ink);color:#fff;border-radius:14px;padding:clamp(24px,5vw,48px);border-top:none;margin-top:44px}
+.out h2{color:#fff}.out p{color:#DCE6DF}.out .eyebrow{color:#9ED9B5}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+footer{border-top:1px solid var(--line);padding-block:32px 48px;color:var(--muted);font-size:14px}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Three day live workshop with Ken "Spanky" Moskowitz</p>
+    <h1>Build your AI team.</h1>
+    <p class="lead">In three days, you leave with your own AI team installed and running.</p>
+    <div class="days-line" aria-label="Workshop days"><span class="pill">Monday</span><span class="pill">Wednesday</span><span class="pill">Friday</span><span class="todo">TO FILL: start date</span></div>
+    <a class="btn" href="#join">Save my seat</a>
+  </header>
+
+  <section aria-labelledby="story">
+    <p class="eyebrow">Why I teach this</p>
+    <h2 id="story">AI broke my business. Then it rebuilt it.</h2>
+    <p>I ran a multimillion dollar company. When ChatGPT went public, clients started to leave. Then I got stage three rectal cancer, and everything stopped for a year. The company kept sliding.</p>
+    <p>I got real close to the thing that was hurting me. I learned how it thinks, what it's good at, and where it breaks. Now I run a team of forty AI employees, and I'm building what could be the first billion dollar AI-first creative agency.</p>
+    <div class="tl" role="list">
+      <div class="step" role="listitem"><div class="dot"></div><p class="when">JAN 2023</p><p class="what">Multimillion dollar business</p></div>
+      <div class="step low" role="listitem"><div class="dot"></div><p class="when">MAR 2023</p><p class="what">Down 20% in monthly recurring revenue</p></div>
+      <div class="step low" role="listitem"><div class="dot"></div><p class="when">MAY 2023</p><p class="what">Stage three cancer. Everything on hold.</p></div>
+      <div class="step low" role="listitem"><div class="dot"></div><p class="when">2025</p><p class="what">$1,000 a month, from people who loved working with us</p></div>
+      <div class="step now" role="listitem"><div class="dot"></div><p class="when">TODAY</p><p class="what">Forty AI employees</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="days">
+    <p class="eyebrow">What happens</p>
+    <h2 id="days">Three days. Three jobs.</h2>
+    <p>You don't watch me work. You build alongside me, and by Friday your team is running.</p>
+    <p><span class="todo">DRAFT AGENDA: Ken to edit</span></p>
+    <div class="grid3">
+      <article class="day"><p class="d">Monday</p><p class="tag">HIRE THEM</p><h3>Set up your team</h3><ul><li>Pick the roles your business needs.</li><li>Brief your team on your brand, your voice and your customers.</li><li>Get the first agents installed.</li></ul></article>
+      <article class="day"><p class="d">Wednesday</p><p class="tag">PUT THEM TO WORK</p><h3>Make real work</h3><ul><li>Run a real brief through your team.</li><li>Watch ads, copy and web pages get built in real time.</li><li>Fix what's off and teach your team your standards.</li></ul></article>
+      <article class="day"><p class="d">Friday</p><p class="tag">LET THEM RUN</p><h3>Set the rules and go</h3><ul><li>Add review steps so nothing goes out without your say.</li><li>Connect your team to how you work every day.</li><li>Leave with your team installed and running.</li></ul></article>
+    </div>
+  </section>
+
+  <section class="out" aria-labelledby="out">
+    <p class="eyebrow">What you leave with</p>
+    <h2 id="out">Your own AI team, installed and running.</h2>
+    <p>Not notes. Not slides. A working team that knows your business.</p>
+  </section>
+
+  <section aria-labelledby="who">
+    <div class="two">
+      <div><p class="eyebrow">Who it's for</p><h2 id="who">Marketers and business owners who want to actually use this stuff.</h2></div>
+      <div><p>If AI is eating into your business, or you're tired of opening ChatGPT twice and going back to the old way, this is for you.</p><p>You'll see real screen recordings of branded ads and websites getting made. Then you'll make your own.</p></div>
+    </div>
+  </section>
+
+  <section id="join" aria-labelledby="join-h">
+    <p class="eyebrow">Join us</p>
+    <h2 id="join-h">Save your seat.</h2>
+    <p>Monday, Wednesday and Friday. Live with Ken.</p>
+    <p><span class="todo">TO FILL: dates</span> <span class="todo">TO FILL: price</span> <span class="todo">TO FILL: checkout link</span></p>
+    <a class="btn" href="#join">Get started</a>
+  </section>
+
+  <footer>Ken "Spanky" Moskowitz | Ad Zombies | adzombies.com</footer>
+</div>
